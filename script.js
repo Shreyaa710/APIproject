@@ -63,5 +63,9 @@ searchBtn.addEventListener("click", () => {
       </div>  
       `;
     })
-    .catch((error) => console.log("yoyo"));
+    .catch((error) => {
+      result.innerHTML = `
+      <div> Oopss!! We don't have data for this country..</div>
+      `;
+    });
 });
